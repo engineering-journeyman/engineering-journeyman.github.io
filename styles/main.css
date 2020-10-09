@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Kano;
+    src: url("../fonts/kano.otf");
+}
+
+h1, h2, h3, h4 {
+    font-family: Kano;
+    text-transform: uppercase;
+}
