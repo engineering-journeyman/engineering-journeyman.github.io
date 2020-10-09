@@ -2,15 +2,18 @@
 <html lang="en-US">
     <head>
         <title>Engineering Journeyman{% if page.title %} | {{ page.title }}{% endif %}</title>
+        
         <meta charset="UTF-8" />
         <meta name="keywords" content="Engineering Journeyman, engineering, journeyman, software" />
         <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Tanner Taylor{% endif %}" />
         <meta name="description" content="{{ site.description }}" />
+
+        <link rel="stylesheet" href="/styles/normalize.css" />
     </head>
     <body>
         <header>
             <h1>Engineering Journeyman</h1>
-        
+
             <nav>
                 {% for navItem in site.data.navigation %}
                     <a href="{{ navItem.link }}">{{ navItem.name }}</a>
