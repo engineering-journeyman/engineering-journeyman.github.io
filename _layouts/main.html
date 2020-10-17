@@ -53,7 +53,9 @@
 
             <nav class="flex-container flex-vertical-align">
                 {% for navItem in site.data.navigation %}
-                    <a href="{{ navItem.link }}">{{ navItem.name }}</a>
+                    <a href="{{ navItem.link }}" {% if page.url == navItem.link %}class="current-page"{% endif %}>
+                        {{ navItem.name }}
+                    </a>
                 {% endfor %}
             </nav>
         </header>

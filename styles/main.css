@@ -1,3 +1,5 @@
+/* general styles */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -13,6 +15,8 @@ h1, h2, h3, h4 {
     color: var(--foreground-heading-color);
 }
 
+/* header styles */
+
 header {
     background-color: var(--main-dark-color);
     padding: 25px;
@@ -21,6 +25,16 @@ header {
 .logo {
     color: var(--main-light-color);
     fill: var(--main-light-color);
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--main-light-color);
+}
+
+nav a:hover, nav a.current-page {
+    text-decoration: underline;
 }
 
 /* flex styles */
