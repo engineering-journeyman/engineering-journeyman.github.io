@@ -23,7 +23,16 @@ header {
     fill: var(--main-light-color);
 }
 
+/* flex styles */
+
 .flex-container {
     display: flex;
+}
+
+.flex-vertical-align {
     align-items: center;
+}
+
+.flex-split-content {
+    justify-content: space-between;
 }
