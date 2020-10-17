@@ -1,11 +1,16 @@
+:root {
+    --main-dark-color: #0b345a;
+    --main-light-color: #22c4d6;
+}
+
 .theme-light {
     --background-color: #ffffff;
     --foreground-color: black;
-    --foreground-heading-color: #0b345a;
+    --foreground-heading-color: var(--main-dark-color);
 }
 
 .theme-dark {
     --background-color: #0b345a;
     --foreground-color: white;
-    --foreground-heading-color: #22c4d6;
+    --foreground-heading-color: var(--main-light-color);
 }

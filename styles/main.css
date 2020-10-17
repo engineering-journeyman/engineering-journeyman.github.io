@@ -10,6 +10,15 @@ html, body {
 h1, h2, h3, h4 {
     font-family: HKGrotesk;
     font-weight: bold;
-    /* text-transform: uppercase; */
     color: var(--foreground-heading-color);
+}
+
+header {
+    background-color: var(--main-dark-color);
+}
+
+.logo {
+    color: var(--main-light-color);
+    fill: var(--main-light-color);
+    display: inline-block;
 }
