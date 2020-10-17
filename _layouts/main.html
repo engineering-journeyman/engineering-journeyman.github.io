@@ -59,16 +59,17 @@
                 {% endfor %}
             </nav>
         </header>
-        
-        <button onclick="toggleTheme()">Toggle Theme</button>
 
         <section>
             {{ content }}
         </section>
         
         <footer>
-            <hr />
-            <span id="copyright">&copy; {{ site.time | date: '%Y' }} Tanner Taylor</span>
+            <hr style="margin-bottom: 25px" />
+            <div class="flex-container flex-split-content flex-vertical-align">
+                <button onclick="toggleTheme()">Toggle Theme</button>
+                <span id="copyright">&copy; {{ site.time | date: '%Y' }} Tanner Taylor</span>
+            </div>
         </footer>
     </body>
 </html>

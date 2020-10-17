@@ -52,11 +52,6 @@ footer {
     padding-top: 25px;
 }
 
-#copyright {
-    display: inline-block;
-    margin-top: 15px;
-}
-
 /* flex styles */
 
 .flex-container {
