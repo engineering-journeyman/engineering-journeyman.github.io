@@ -1,0 +1,11 @@
+.theme-light {
+    --background-color: #ffffff;
+    --foreground-color: black;
+    --foreground-heading-color: #0b345a;
+}
+
+.theme-dark {
+    --background-color: #0b345a;
+    --foreground-color: white;
+    --foreground-heading-color: #22c4d6;
+}

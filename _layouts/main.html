@@ -9,7 +9,25 @@
         <meta name="description" content="{{ site.description }}" />
 
         <link rel="stylesheet" href="/styles/normalize.css" />
+        <link rel="stylesheet" href="/styles/themes.css" />
         <link rel="stylesheet" href="/styles/main.css" />
+
+        <script>
+            function setTheme(themeClassName) {
+                document.documentElement.className = themeClassName;
+                localStorage.setItem("theme", themeClassName);
+            }
+
+            function toggleTheme() {
+                if (localStorage.getItem("theme") === "theme-dark") {
+                    setTheme("theme-light");
+                } else if (localStorage.getItem("theme") === "theme-light") {
+                    setTheme("theme-dark");
+                }
+            }
+
+            setTheme("theme-light");
+        </script>
     </head>
     <body>
         <header>
@@ -20,6 +38,8 @@
                     <a href="{{ navItem.link }}">{{ navItem.name }}</a>
                 {% endfor %}
             </nav>
+
+            <button onclick="toggleTheme()">Toggle Theme</button>
         </header>
         
         <section>
