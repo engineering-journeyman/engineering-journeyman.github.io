@@ -14,20 +14,32 @@
         <link rel="stylesheet" href="/styles/main.css" />
 
         <script>
+            var themeKey = "theme";
+            var lightThemeName = "theme-light";
+            var darkThemeName = "theme-dark";
+
+            function getTheme() {
+                return localStorage.getItem(themeKey);
+            }
+
             function setTheme(themeClassName) {
                 document.documentElement.className = themeClassName;
-                localStorage.setItem("theme", themeClassName);
+                localStorage.setItem(themeKey, themeClassName);
             }
 
             function toggleTheme() {
-                if (localStorage.getItem("theme") === "theme-dark") {
-                    setTheme("theme-light");
-                } else if (localStorage.getItem("theme") === "theme-light") {
-                    setTheme("theme-dark");
+                if (getTheme() === darkThemeName) {
+                    setTheme(lightThemeName);
+                } else if (getTheme() === lightThemeName) {
+                    setTheme(darkThemeName);
                 }
             }
 
-            setTheme("theme-light");
+            if (getTheme() === null) {
+                setTheme(lightThemeName);
+            } else {
+                setTheme(getTheme());
+            }
         </script>
     </head>
     <body>
