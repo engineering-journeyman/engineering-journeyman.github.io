@@ -1,12 +1,16 @@
 /* general styles */
 
-html, body {
+body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
     color: var(--foreground-color);
     font-family: Roboto;
     line-height: 150%;
+
+    width: 65%;
+    margin: 0 auto;
+    padding: 25px 0;
 }
 
 h1, h2, h3, h4 {
@@ -15,16 +19,14 @@ h1, h2, h3, h4 {
     color: var(--foreground-heading-color);
 }
 
-/* header styles */
-
-header {
-    background-color: var(--main-dark-color);
-    padding: 25px;
+hr {
+    margin: 25px 0;
 }
 
+/* header styles */
+
 .logo {
-    color: var(--main-light-color);
-    fill: var(--main-light-color);
+    fill: var(--foreground-heading-color);
 }
 
 nav a {
@@ -38,14 +40,7 @@ nav a:hover, nav a.current-page {
     text-decoration: underline;
 }
 
-/* section & footer styles */
-
-section, footer {
-    width: 60%;
-    margin: 0 auto;
-}
-
-/* footer only styles */
+/* footer styles */
 
 footer {
     text-align: center;
