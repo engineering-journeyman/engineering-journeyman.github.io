@@ -10,7 +10,7 @@ body {
 
     width: 65%;
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 h1, h2, h3, h4 {
@@ -32,8 +32,10 @@ hr {
 nav a {
     margin: 0 20px;
     text-decoration: none;
-    color: var(--main-light-color);
-    font-size: 1.25em;
+    color: var(--foreground-heading-color);
+    font-size: 1.15em;
+    font-family: HKGrotesk;
+    font-weight: bold;
 }
 
 nav a:hover, nav a.current-page {
