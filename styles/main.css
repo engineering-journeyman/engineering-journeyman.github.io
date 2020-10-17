@@ -29,6 +29,10 @@ hr {
     fill: var(--foreground-heading-color);
 }
 
+header a {
+    text-decoration: none;
+}
+
 nav a {
     margin: 0 20px;
     text-decoration: none;
