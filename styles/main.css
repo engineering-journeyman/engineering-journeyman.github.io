@@ -15,10 +15,15 @@ h1, h2, h3, h4 {
 
 header {
     background-color: var(--main-dark-color);
+    padding: 25px;
 }
 
 .logo {
     color: var(--main-light-color);
     fill: var(--main-light-color);
-    display: inline-block;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
 }
