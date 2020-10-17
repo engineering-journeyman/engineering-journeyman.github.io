@@ -1,17 +1,15 @@
-@font-face {
-    font-family: Kano;
-    src: url("../fonts/kano.otf");
-}
-
 html, body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
     color: var(--foreground-color);
+    font-family: Roboto;
+    line-height: 150%;
 }
 
 h1, h2, h3, h4 {
-    font-family: Kano;
-    text-transform: uppercase;
+    font-family: HKGrotesk;
+    font-weight: bold;
+    /* text-transform: uppercase; */
     color: var(--foreground-heading-color);
 }
