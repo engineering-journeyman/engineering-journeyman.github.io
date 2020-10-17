@@ -4,13 +4,13 @@
 }
 
 .theme-light {
-    --background-color: #ffffff;
+    --background-color: white;
     --foreground-color: black;
     --foreground-heading-color: var(--main-dark-color);
 }
 
 .theme-dark {
-    --background-color: #0b345a;
+    --background-color: var(--main-dark-color);
     --foreground-color: white;
     --foreground-heading-color: var(--main-light-color);
 }
