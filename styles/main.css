@@ -38,6 +38,25 @@ nav a:hover, nav a.current-page {
     text-decoration: underline;
 }
 
+/* section & footer styles */
+
+section, footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* footer only styles */
+
+footer {
+    text-align: center;
+    padding-top: 25px;
+}
+
+#copyright {
+    display: inline-block;
+    margin-top: 15px;
+}
+
 /* flex styles */
 
 .flex-container {

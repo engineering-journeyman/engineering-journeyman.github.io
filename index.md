@@ -4,8 +4,6 @@ layout: main
 
 {{ site.description }}
 
-# Test 2
-
 # Heading 1
 
 Lorem ipsum.
