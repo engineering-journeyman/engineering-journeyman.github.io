@@ -4,7 +4,7 @@
         <title>Engineering Journeyman{% if page.title %} | {{ page.title }}{% endif %}</title>
         
         <meta charset="UTF-8" />
-        <meta name="keywords" content="Engineering Journeyman, engineering, journeyman, software" />
+        <meta name="keywords" content="Engineering Journeyman, engineering, journeyman, software, development, programming, design" />
         <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}Tanner Taylor{% endif %}" />
         <meta name="description" content="{{ site.description }}" />
 
@@ -12,11 +12,13 @@
         <link rel="stylesheet" href="/styles/normalize.css" />
         <link rel="stylesheet" href="/styles/themes.css" />
         <link rel="stylesheet" href="/styles/main.css" />
+        <link rel="stylesheet" href="/styles/font-awesome.css" />
 
         <script>
             var themeKey = "theme";
             var lightThemeName = "theme-light";
             var darkThemeName = "theme-dark";
+            var currentThemeClassName = "current-theme";
 
             function getTheme() {
                 return localStorage.getItem(themeKey);
@@ -25,21 +27,34 @@
             function setTheme(themeClassName) {
                 document.documentElement.className = themeClassName;
                 localStorage.setItem(themeKey, themeClassName);
-            }
 
-            function toggleTheme() {
-                if (getTheme() === darkThemeName) {
-                    setTheme(lightThemeName);
-                } else if (getTheme() === lightThemeName) {
-                    setTheme(darkThemeName);
+                var themeButtons = document.getElementsByClassName("theme-button");
+                for (var i = 0; i < themeButtons.length; i++) {
+                    themeButtons.item(i).classList.remove(currentThemeClassName);
+                }
+
+                if (themeClassName === lightThemeName) {
+                    document.getElementById("light-theme-button").classList.add(currentThemeClassName);
+                } else if (themeClassName === darkThemeName) {
+                    document.getElementById("dark-theme-button").classList.add(currentThemeClassName);
                 }
             }
 
-            if (getTheme() === null) {
+            function handleLightThemeClicked() {
                 setTheme(lightThemeName);
-            } else {
-                setTheme(getTheme());
             }
+
+            function handleDarkThemeClicked() {
+                setTheme(darkThemeName);
+            }
+
+            document.addEventListener("DOMContentLoaded", event => {
+                if (getTheme() === null) {
+                    setTheme(lightThemeName);
+                } else {
+                    setTheme(getTheme());
+                }
+            });
         </script>
     </head>
     <body>
@@ -83,7 +98,11 @@
         <footer>
             <hr />
             <div class="flex-container flex-split-content flex-vertical-align">
-                <button onclick="toggleTheme()">Toggle Theme</button>
+                <div>
+                    <span>Theme:</span> 
+                    <span id="light-theme-button" class="theme-button" onclick="handleLightThemeClicked()"><i class="fa fa-sun"></i>Light</span>
+                    <span id="dark-theme-button" class="theme-button" onclick="handleDarkThemeClicked()"><i class="fa fa-moon"></i>Dark</span>
+                </div>
                 <span id="copyright">&copy; {{ site.time | date: '%Y' }} Tanner Taylor</span>
             </div>
         </footer>
