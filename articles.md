@@ -7,3 +7,5 @@ permalink: /
 # Articles
 
 {{ site.description }}
+
+<b>ARTICLES COMING SOON!</b>
