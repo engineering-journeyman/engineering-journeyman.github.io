@@ -18,6 +18,8 @@ Definitely! Whether you consider yourself an apprentice, a journeyman, or a mast
 
 # About Me
 
+![Profile Image](/assets/images/profile.jpg){: .profile-image }
+
 My name is Tanner Taylor. I'm a software engineer and the self-proclaimed "Engineering Journeyman". I've been a professional software engineer since 2016, but started my software engineering journey in high school. My dad has had a long career in information technology and had a leftover Java text book from his college years. I stumbled across it and was curious, so I started reading. Prior to this point, I hadn't even spared any thought to how someone might build a computer program, but strangely enough, I was hooked! I kept reading and started coding what I was learning. It didn't take me long to realize that this was what I wanted to do with my life.
 
 I started going to college at Utah State University for a degree in Computer Science. While I was in school, I was working for a utility billing company called Conservice. The job I was doing at the time was nuanced and complicated with data and processes composed of dozens of spreadsheets. Let's just say it was in dire need of streamlining. It wasn't much, but I started automating the processes by scripting in Excel and Google Sheets. Eventually this grew into a suite of macros and scripts used by the team at large and eventually by other teams as well. It did well enough that performance numbers were improving and hiring projections went down. They had me working on this almost full time when a chief officer for the company took notice and got me moved over to the company's development team. It was not long after that I transfered to Western Governors University to study software development online.
